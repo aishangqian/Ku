@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/common_nav_btn_menu_n_xhdpi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_weight="1"
+            android:background="@drawable/shap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/text_view"
+            android:text="搜索"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.stx.xhb.xbanner.XBanner
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/xbanner"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:AutoPlayTime="3000"
+        app:pointsContainerBackground="#44aaaaaa"
+        app:pointNormal="@drawable/shape_noraml"
+        app:pointSelect="@drawable/shape_selected"
+        app:pointsPosition="RIGHT"
+        app:tipTextSize="12sp"
+        app:isShowNumberIndicator="true"
+        app:isShowIndicatorOnlyOne="true"
+        app:pageChangeDuration="800"/>
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/xr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.jcodecraeer.xrecyclerview.XRecyclerView>
+</LinearLayout>
